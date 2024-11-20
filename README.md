@@ -1,10 +1,17 @@
 # potato-leaf-diseases
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
+(The dataset)[https://www.kaggle.com/datasets/warcoder/potato-leaf-disease-dataset/data] contains 3076 images taken in different conditions. Each image is in one of 7 health conditions: fungi, viruses, pests, bacteria, Phytophthora, nematodes and healthy
 
 
 ## Business Requirements
-* Describe your business requirements
+Agriplex Farms is a mid-sized agricultural company specializing in growing and supplying potatoes to local and international markets. Over the past few years, the farm has faced significant challenges in maintaining the health of its crops due to various diseases affecting their potato plants, such as fungi, viruses, pests, bacteria, Phytophthora and nematodes. These diseases, if left untreated, can devastate yields, resulting in financial losses and disrupted supply chains.
+
+Currently, disease detection is carried out manually by agronomists walking through fields to inspect crops. This process is time-intensive and prone to human error. As a result, Agriplex Farms has identified an urgent need for a faster, more accurate, and scalable solution to detect diseases early, enabling timely interventions.
+
+Agriplex Farms envisions leveraging Machine Learning (ML) to revolutionize their disease detection process. By deploying an ML-powered solution, the farm aims to:
+
+- The client is interested in conducting a study to visually differentiate a healthy potato leaf from one with common diseases.
+- The client is interested in predicting whether a potato leaf is healthy or diseased, and if diseased, identifying the specific disease present.
 
 
 ## Hypothesis and how to validate?
@@ -12,11 +19,36 @@
 
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
+
+### Business Requirement 1: Data Visualization
+- We will display the mean and standard deviation images for healthy and diseased potato leaves.
+- We will display the visual difference between average healthy and diseased potato leaves.
+- We will create an image montage showcasing various healthy and diseased leaves, including examples of different disease types (e.g., late blight, early blight).
+
+### Business Requirement 2: Classification
+- We want to predict if a given potato leaf is healthy or diseased.
+- We want to identify specific diseases if a potato leaf is classified as diseased.
+- We will build a multi-class classifier to identify if a leaf is healthy or identify the disease.
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
+
+### PotatoDiseaseDetection
+- We want an ML model to predict whether a potato leaf is healthy or diseased. If diseased, the model should classify the specific type of disease.
+- This is a supervised, multi-class, single-label classification problem.
+- Our ideal outcome is to provide farm managers and agronomists with a faster and more reliable method for detecting potato diseases, enabling timely interventions and reducing crop losses.
+- The model success metrics are:
+    - F1-score of 85% or above for each class in multi-class classification.
+- The model output is defined as a multiclass indicating the disease (or healthy) and the associated probabilities for each class. The prediction should enable real-time analysis of field images, therefore not in batches.
+
+- Heuristics: Currently, disease identification relies on manual inspection by agronomists walking through fields. This process involves collecting leaf samples, visually examining them for discoloration, spots, or texture changes, and identifying diseases based on expertise. This method is time-intensive, error-prone, and not scalable across thousands of acres, leading to delayed responses and increased crop losses.
+
+- Training Data:
+The training data to fit the model comes from kaggle. This dataset contains images of potato leaves, labeled with the disease. Augmented versions of these images (e.g., flipped, rotated, adjusted brightness) are used to improve model robustness.
+
+- Train data
+    - target: healthy or disease type (multi-class label).
+    - Features: images of potato leaves, including variations due to lighting, angles, and field conditions.
 
 
 ## Dashboard Design
