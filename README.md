@@ -52,8 +52,48 @@ The training data to fit the model comes from kaggle. This dataset contains imag
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
+### Page 1: Project Summary
+
+- Project Summary
+    - General Information
+        - Potato diseases such as late blight, early blight, and bacterial black spot significantly threaten global potato production.
+        - These diseases can cause discoloration, spotting, and texture changes in potato leaves, leading to reduced crop yield and financial losses for farmers.
+        - Currently, disease detection involves manual inspection by agronomists, which is time-consuming, error-prone, and not scalable across large plantations.
+        - Early and accurate detection of these diseases is crucial to reduce crop losses and optimize resource use, such as pesticides.
+    - Project Dataset
+        - The dataset contains thousands of labeled images of potato leaves, each image is labeled as healthy or a specific disease category.
+        - Augmentation techniques (e.g., flipping, rotation, brightness adjustments) are applied to enhance the dataset’s variability and improve model robustness.
+    - Business Requirements
+        - The client is interested in conducting a study to visually differentiate between healthy and diseased potato leaves.
+        - The client is interested in building a machine learning model to predict if a potato leaf is healthy or diseased and if diseased, the specific type of disease.
+
+
+### Page 2: Cells Visualizer
+
+- It will answer business requirement 1
+    - input to choose a disease.
+    - Checkbox 1 - Difference between average and variability image
+    - Checkbox 2 - Differences between average healthy leaf and average leaf of the chosen disease
+    - Checkbox 3 - Image Montage
+
+### Page 3: Malaria Detector
+
+- Business requirement 2 information - "The client is interested in predicting if a leaf is infected with a disease and if so, what disease"
+- Link to download a set of potato leaf images for live prediction.
+- User Interface with a file uploader widget. The user should upload multiple images. It will display the image and a prediction statement, indicating if the plant is healthy or what disease the plant is infected with and the probability associated with this statement.
+- Table with the image name and prediction results.
+- Download button to download table.
+
+### Page 4: Project Hypothesis and Validation
+
+- Block for each project hypothesis, describe the conclusion and how you validated it.
+
+### Page 5: ML Performance Metrics
+
+- Label Frequencies for Train, Validation and Test Sets
+- Model History - Accuracy and Losses
+- Model evaluation result
+
 
 
 
