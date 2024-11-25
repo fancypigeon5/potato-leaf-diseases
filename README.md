@@ -139,3 +139,6 @@ The training data to fit the model comes from kaggle. This dataset contains imag
 
 ## Acknowledgements (optional)
 * Thank the people that provided support through this project.
+
+
+https://stackoverflow.com/questions/73971025/how-to-do-data-augmentation-and-save-it-to-another-folder
