@@ -9,6 +9,5 @@ node_modules/
 cloudinary_python.txt
 kaggle.json
 inputs/
-jupyter_notebooks/models-versions.ipynb
 outputs/v1/model_V1/disease_identification_model.keras
 outputs/v1/model_V2/disease_identification_model.keras
