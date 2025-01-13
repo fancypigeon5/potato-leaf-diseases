@@ -70,7 +70,7 @@ The training data to fit the model comes from kaggle. This dataset contains imag
         - The client is interested in building a machine learning model to predict if a potato leaf is healthy or diseased and if diseased, the specific type of disease.
 
 
-### Page 2: Cells Visualizer
+### Page 2: Leaves Visualizer
 
 - It will answer business requirement 1
     - input to choose a disease.
@@ -78,7 +78,7 @@ The training data to fit the model comes from kaggle. This dataset contains imag
     - Checkbox 2 - Differences between average healthy leaf and average leaf of the chosen disease
     - Checkbox 3 - Image Montage
 
-### Page 3: Malaria Detector
+### Page 3: Disease Detector
 
 - Business requirement 2 information - "The client is interested in predicting if a leaf is infected with a disease and if so, what disease"
 - Link to download a set of potato leaf images for live prediction.
