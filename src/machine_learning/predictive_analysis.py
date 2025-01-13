@@ -48,7 +48,7 @@ def load_model_and_predict(my_image, version, model):
     """
 
     model = load_model(
-        f"outputs/{version}/model_{model}/disease_identification_model.keras")
+        f"outputs/{version}/model_{model}/disease_identification_model.h5")
 
     pred_proba = model.predict(my_image)[0]
 
