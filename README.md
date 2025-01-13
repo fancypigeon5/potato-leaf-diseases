@@ -16,7 +16,17 @@ Agriplex Farms envisions leveraging Machine Learning (ML) to revolutionize their
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+- We suspect healthy plants are distinguishable from infected plants.
+    - Doing a visual image study with Average Image, Variability Image, Difference between Averages and image montage should help
+
+- We suspect bacteria infected plants have deviations in appearance and are therefore distinguishable from other plants.
+    - Doing a visual image study with Average Image, Variability Image, Difference between Averages and image montage should help
+
+- We suspect phytopthora infected plants have deviations in appearance and are therefore distinguishable from other plants.
+    - Doing a visual image study with Average Image, Variability Image, Difference between Averages and image montage should help
+
+- We suspect that a NN will be able to learn the differences between when a plant is Healthy, infected by bacteria or infected by phytopthora.
+    - The model is able to differentiate these if it can get a weighted average of 90% or more.
 
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
@@ -39,9 +49,9 @@ Agriplex Farms envisions leveraging Machine Learning (ML) to revolutionize their
 - This is a supervised, multi-class, single-label classification problem.
 - Our ideal outcome is to provide farm managers and agronomists with a faster and more reliable method for detecting potato diseases, enabling timely interventions and reducing crop losses.
 - The model success metrics are:
-    - F1-score of 85% or above for each class in multi-class classification.
+    - F1-score of 85% or above for each class in the multi-class classification.
     - A weighted average of 90% or better on the test set
-- The model output is defined as a multiclass indicating the disease (or healthy) and the associated probabilities for each class. The prediction should enable real-time analysis of field images, therefore not in batches.
+- The model output is defined as a multiclass indicating the disease (or healthy) and the associated probabilities for each class. The prediction should enable real-time analysis of field images.
 
 - Heuristics: Currently, disease identification relies on manual inspection by agronomists walking through fields. This process involves collecting leaf samples, visually examining them for discoloration, spots, or texture changes, and identifying diseases based on expertise. This method is time-intensive, error-prone, and not scalable across thousands of acres, leading to delayed responses and increased crop losses.
 
@@ -58,7 +68,7 @@ The training data to fit the model comes from kaggle. This dataset contains imag
 
 - Project Summary
     - General Information
-        - Potato diseases such as late blight, early blight, and bacterial black spot significantly threaten global potato production.
+        - Potato diseases significantly threaten global potato production.
         - These diseases can cause discoloration, spotting, and texture changes in potato leaves, leading to reduced crop yield and financial losses for farmers.
         - Currently, disease detection involves manual inspection by agronomists, which is time-consuming, error-prone, and not scalable across large plantations.
         - Early and accurate detection of these diseases is crucial to reduce crop losses and optimize resource use, such as pesticides.
