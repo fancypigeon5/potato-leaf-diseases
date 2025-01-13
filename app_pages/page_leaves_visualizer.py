@@ -54,12 +54,12 @@ def page_leaves_visualizer_body():
 
     if st.checkbox("Image Montage"):
         st.write("* To refresh the montage, click on the 'Create Montage' button")
-        my_data_dir = 'inputs/leaves_dataset/leaf_images'
-        labels = os.listdir(my_data_dir + '/validation')
+        my_data_dir = 'src/montage_images'
+        labels = os.listdir(my_data_dir)
         label_to_display = st.selectbox(
             label="Select label", options=labels, index=0)
         if st.button("Create Montage"):
-            image_montage(dir_path=my_data_dir + '/validation',
+            image_montage(dir_path=my_data_dir,
                           label_to_display=label_to_display,
                           nrows=6, ncols=3, figsize=(10, 25))
         st.write("---")
