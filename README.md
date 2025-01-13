@@ -1,4 +1,5 @@
 # potato-leaf-diseases
+## [Live Dashboard](https://potato-disease-detector-3dc8759c2d32.herokuapp.com)
 ## Dataset Content
 [The dataset](https://www.kaggle.com/datasets/warcoder/potato-leaf-disease-dataset/data) contains 3076 images taken in different conditions. Each image is in one of 7 health conditions: fungi, viruses, pests, bacteria, Phytophthora, nematodes and healthy.
 For this Project we will be focussing on the 3 categories that are most important for Agriplex Farms (bacteria, Phytophthora and healthy)
