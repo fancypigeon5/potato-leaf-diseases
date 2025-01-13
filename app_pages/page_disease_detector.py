@@ -17,9 +17,9 @@ def page_disease_detector_body():
         f"healthy, infected by bacteria or infected by Pytopthora. ")
 
     st.write(
-        f"* You can download a set of parasitised and uninfected cells for live prediction. "
-        f"You can download the images from [here](https://www.kaggle.com/codeinstitute/cell-images-test)."
-    )
+        f"* You can download images for live prediction. "
+        f"You can download the images from [here](https://www.kaggle.com/datasets/warcoder/potato-leaf-disease-dataset/data)."
+        f"Make sure to download from the Healthy, Bacteria and Phytopthora folders.")
 
     st.write("---")
 
