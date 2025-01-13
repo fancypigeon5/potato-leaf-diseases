@@ -45,7 +45,7 @@ Agriplex Farms envisions leveraging Machine Learning (ML) to revolutionize their
 
 ## ML Business Case
 
-### Potatoinfectedetection
+### Potato infection detection
 - We want an ML model to predict whether a potato leaf is healthy or infected. If infected, the model should classify the specific type of disease.
 - This is a supervised, multi-class, single-label classification problem.
 - Our ideal outcome is to provide farm managers and agronomists with a faster and more reliable method for detecting potato diseases, enabling timely interventions and reducing crop losses.
