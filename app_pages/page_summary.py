@@ -14,6 +14,7 @@ def page_summary_body():
         f"* Current manual disease detection is slow, error-prone, and lacks scalability.\n\n"
         f"**Project Dataset**\n"
         f"* The dataset of potato leaf images are the 3 most important categories out of a dataset containing 3076 images in 7 categories. It contains 1117 images labeled as healthy, Bacterial or Phytopthora.\n"
+        f"* Augmentation techniques (e.g., flipping, rotation, brightness adjustments) are applied to enhance the dataset’s variability and improve model robustness.\n\n"
     )
 
     st.write(

@@ -6,7 +6,7 @@ def page_project_hypothesis_body():
     st.write("### Project Hypothesis and Validation")
 
     st.success(
-        f"**We suspect healthy plants are distinguishable from innfected plants.**\n\n"
+        f"**We suspect healthy plants are distinguishable from infected plants.**\n\n"
         f"* Image Montages show that healthy plants have a consistent appearance: \n"
         f"  - Bright green color without brown spots \n"
         f"  - Large open leaves \n\n"
