@@ -1,1 +1,5 @@
 inputs/leaves_dataset/leaf_images/validation
+outputs/v1
+outputs/v2/model_V1
+outputs/v2/model_V2
+outputs/v2/model_V3
