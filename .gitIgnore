@@ -8,6 +8,4 @@ node_modules/
 .github/
 cloudinary_python.txt
 kaggle.json
-inputs/leaves_dataset/leaf_images/test
-inputs/leaves_dataset/leaf_images/balanced
-inputs/leaves_dataset/leaf_images/train
+inputs/
